@@ -20,3 +20,5 @@ def fixpaths(par_dir_name, currentframe):
     # if the parent directory path is not in sys.path, add it at the beginning
     if par_dir_path not in sys.path:
         sys.path.insert(0, par_dir_path)
+
+    return par_dir_path
