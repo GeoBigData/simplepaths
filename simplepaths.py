@@ -3,7 +3,11 @@ import os
 import sys
 import inspect
 
-def fixpaths(par_dir_name, currentframe = inspect.currentframe()):
+def fixpaths(par_dir_name, currentframe):
+    ''' par_dir_name = Name of the parent directory of the package or repo
+        currentframe = should be fed in from source as inspect.currentframe()
+    '''
+
     # get the path of the current file (or interpreter or terminal)
     file_path = os.path.abspath(inspect.getfile(currentframe))
     # get the parent directory of that file (or interpreter or terminal)

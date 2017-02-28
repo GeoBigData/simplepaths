@@ -18,7 +18,7 @@ test_requirements = [
 
 setup(
     name='simplepaths',
-    version='0.1.1',
+    version='0.1.2',
     description="Python module simply for fixing relative paths within a package.",
     long_description=readme + '\n\n' + history,
     author="Michael Gleason",
