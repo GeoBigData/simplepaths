@@ -3,9 +3,9 @@ import os
 import sys
 import inspect
 
-def fixpaths(par_dir_name):
+def fixpaths(par_dir_name, currentframe = inspect.currentframe()):
     # get the path of the current file (or interpreter or terminal)
-    file_path = os.path.abspath(inspect.getfile(inspect.currentframe()))
+    file_path = os.path.abspath(inspect.getfile(currentframe))
     # get the parent directory of that file (or interpreter or terminal)
     par_dir_path = os.path.dirname(file_path)
     # search up through the folder structure to try to find the specified parent directory
