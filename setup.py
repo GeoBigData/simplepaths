@@ -24,10 +24,7 @@ setup(
     author="Michael Gleason",
     author_email='michael.gleason@digitalglobe.com',
     url='https://github.com/mjgleason/simplepaths',
-    packages=[
-        'simplepaths',
-    ],
-    package_dir={'': 'simplepaths'},
+    py_modules=['simplepaths'],
     include_package_data=True,
     install_requires=requirements,
     license="GNU General Public License v3",
