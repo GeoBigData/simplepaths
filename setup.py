@@ -27,7 +27,7 @@ setup(
     packages=[
         'simplepaths',
     ],
-    package_dir={'simplepaths': 'simplepaths'},
+    package_dir={'': 'simplepaths'},
     include_package_data=True,
     install_requires=requirements,
     license="GNU General Public License v3",
