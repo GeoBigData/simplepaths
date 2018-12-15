@@ -13,7 +13,7 @@ def fixpaths(par_dir_name, currentframe):
     # get the parent directory of that file (or interpreter or terminal)
     par_dir_path = os.path.dirname(file_path)
     # search up through the folder structure to try to find the specified parent directory
-    while os.path.basename(par_dir_path) <> par_dir_name:
+    while os.path.basename(par_dir_path) != par_dir_name:
         par_dir_path = os.path.dirname(par_dir_path)
         if par_dir_path == '/':
             raise ValueError('{} parent directory not found'.format(par_dir_name))
